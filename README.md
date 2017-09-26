@@ -231,3 +231,4 @@ I don't get paid to maintain rouge. If you've found this software useful, consid
 ## License
 
 Rouge is released under the MIT license. Please see the `LICENSE` file for more information.
+# rouge
