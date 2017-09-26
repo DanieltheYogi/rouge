@@ -3,9 +3,9 @@
 module Rouge
   module Lexers
     class MsBot < RegexLexer
-      title 'MS-Bot'
+      title 'MsBot'
       desc "JavaScript Object Notation (json.org)"
-      tag 'ms_bot'
+      tag 'msbot'
       filenames '*.json'
       mimetypes 'application/json', 'application/vnd.api+json',
                 'application/hal+json'
