@@ -2,12 +2,12 @@
 
 module Rouge
   module Lexers
-    class Generic < Lexer
-      title "Generic"
+    class Satisfi < Lexer
+      title "satisfi"
       desc "A boring lexer that doesn't highlight anything"
 
-      tag 'generic'
-      aliases 'generic'
+      tag 'satisfi'
+      aliases 'satisfi'
       filenames '*.txt'
       mimetypes 'text/plain'
 
