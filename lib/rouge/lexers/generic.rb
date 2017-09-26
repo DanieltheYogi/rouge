@@ -2,12 +2,12 @@
 
 module Rouge
   module Lexers
-    class Default < Lexer
-      title "Default Bot"
+    class Generic < Lexer
+      title "Generic"
       desc "A boring lexer that doesn't highlight anything"
 
-      tag 'default'
-      aliases 'default'
+      tag 'generic'
+      aliases 'generic'
       filenames '*.txt'
       mimetypes 'text/plain'
 
