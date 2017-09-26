@@ -2,10 +2,10 @@
 
 module Rouge
   module Lexers
-    class Satisfi < RegexLexer
-      title 'Satisfi'
+    class Default < RegexLexer
+      title 'Default'
       desc "JavaScript Object Notation (json.org)"
-      tag 'satisfi'
+      tag 'default'
       filenames '*.json'
       mimetypes 'application/json', 'application/vnd.api+json',
                 'application/hal+json'
