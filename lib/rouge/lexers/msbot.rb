@@ -2,27 +2,24 @@
 
 module Rouge
   module Lexers
-    class MsBot < RegexLexer
-      title 'MsBot'
-      desc "JavaScript Object Notation (json.org)"
-      tag 'msbot'
-      filenames '*.json'
-      mimetypes 'application/json', 'application/vnd.api+json',
-                'application/hal+json'
+    class MsBotFramework < Lexer
+      title "MS Bot Framework"
+      desc "A boring lexer that doesn't highlight anything"
 
-      state :root do
-        rule /\s+/m, Text::Whitespace
-        rule /"/, Str::Double, :string
-        rule /(?:true|false|null)\b/, Keyword::Constant
-        rule /[{},:\[\]]/, Punctuation
-        rule /-?(?:0|[1-9]\d*)\.\d+(?:e[+-]?\d+)?/i, Num::Float
-        rule /-?(?:0|[1-9]\d*)(?:e[+-]?\d+)?/i, Num::Integer
+      tag 'msbot'
+      aliases 'msbot'
+      filenames '*.txt'
+      mimetypes 'text/plain'
+
+      attr_reader :token
+      def initialize(*)
+        super
+
+        @token = token_option(:token) || Text
       end
 
-      state :string do
-        rule /[^\\"]+/, Str::Double
-        rule /\\./, Str::Escape
-        rule /"/, Str::Double, :pop!
+      def stream_tokens(string, &b)
+        yield self.token, string
       end
     end
   end
