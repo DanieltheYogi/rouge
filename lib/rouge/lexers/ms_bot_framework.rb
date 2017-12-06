@@ -9,10 +9,10 @@ module Rouge
       filenames '*.htm', '*.html', '*.xhtml'
       mimetypes 'text/html', 'application/xhtml+xml'
 
-      def self.detect?(text)
-        return true if text.doctype?(/\bhtml\b/i)
-        return true if text =~ /<\s*html\b/
-      end
+#       def self.detect?(text)
+#         return true if text.doctype?(/\bhtml\b/i)
+#         return true if text =~ /<\s*html\b/
+#       end
 
       start do
         @javascript = Javascript.new(options)
