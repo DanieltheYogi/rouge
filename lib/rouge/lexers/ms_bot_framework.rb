@@ -2,7 +2,7 @@
 
 module Rouge
   module Lexers
-    class MSBotFramework < RegexLexer
+    class MS_Bot_Framework < RegexLexer
       title "MS Bot Framework"
       desc "MS Bot Framework"
       tag 'ms_bot_framework'

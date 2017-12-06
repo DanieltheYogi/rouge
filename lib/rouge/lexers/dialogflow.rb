@@ -2,9 +2,9 @@
 
 module Rouge
   module Lexers
-    class DialogFlow < RegexLexer
-      title 'DialogFlow'
-      desc "DialogFlow but mostly JavaScript Object Notation (json.org)"
+    class Dialogflow < RegexLexer
+      title 'Dialogflow'
+      desc "Dialogflow but mostly JavaScript Object Notation (json.org)"
       tag 'dialogflow'
       filenames '*.json'
       mimetypes 'application/json', 'application/vnd.api+json',
