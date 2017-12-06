@@ -2,10 +2,10 @@
 
 module Rouge
   module Lexers
-    class MsBotFramework < RegexLexer
+    class MSBotFramework < RegexLexer
       title "MS Bot Framework"
       desc "MS Bot Framework"
-      tag 'msbot'
+      tag 'ms_bot_framework'
       filenames '*.htm', '*.html', '*.xhtml'
       mimetypes 'text/html', 'application/xhtml+xml'
 
